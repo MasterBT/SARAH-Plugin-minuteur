@@ -1,0 +1,60 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleminuteur" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+ <rule id="ruleminuteur" scope="public">
+  	<example>Sarah lance le minuteur pour dix minutes</example>
+  	<tag>out.action=new Object(); </tag>
+
+  	<item>Sarah</item>
+
+     
+  <one-of>
+    <item>lance compte a reubour a</item>
+    <item>met le minuteur a</item>
+    <item>met la minuterie pour</item>
+    <item>lance la minuterie a</item>
+    <item>lance la minuterie pour</item>
+    <item>minuteur a</item>
+    <item>lance compte a reubour pour</item>
+    <item>met le minuteur pour</item>
+    <item>minuteur pour</item>
+    <item>minuteur</item>
+  </one-of>
+
+  <one-of>
+   <item>30 seconde<tag>out.action.temps = '30000';out.action.tempsname = "30 secondes";</tag></item>
+   <item>une minute<tag>out.action.temps = '60000';out.action.tempsname = "une minute";</tag></item>
+   <item>une minute et demi<tag>out.action.temps = '90000';out.action.tempsname = "une minute et demi";</tag></item>
+   <item>deux minute<tag>out.action.temps = '120000';out.action.tempsname = "deux minute";</tag></item>
+   <item>deux minute et demi<tag>out.action.temps = '160000';out.action.tempsname = "deux minute et demi";</tag></item>
+   <item>trois minute<tag>out.action.temps = '180000';out.action.tempsname = "trois minute";</tag></item>
+   <item>trois minute et demi<tag>out.action.temps = '210000'out.action.tempsname = "trois minute et demi";;</tag></item>
+   <item>quatre minute<tag>out.action.temps = '240000';out.action.tempsname = "quatre minute";</tag></item>
+   <item>quatre minute et demi<tag>out.action.temps = '270000';out.action.tempsname = "quatre minute et demi";</tag></item>
+   <item>cinq minute<tag>out.action.temps = '300000';out.action.tempsname = "cinq minute";</tag></item>
+   <item>cinq minute et demi<tag>out.action.temps = '330000';out.action.tempsname = "cinq minute et demi";</tag></item>
+   <item>six minute<tag>out.action.temps = '360000';out.action.tempsname = "six minute";</tag></item>
+   <item>six minute et demi<tag>out.action.temps = '390000'out.action.tempsname = "six minute et demi";;</tag></item>
+   <item>sept minute<tag>out.action.temps = '420000';out.action.tempsname = "sept minute";</tag></item>
+   <item>sept minute et demi<tag>out.action.temps = '450000';out.action.tempsname = "sept minute et demi";</tag></item>
+   <item>huit minute <tag>out.action.temps = '480000';out.action.tempsname = "huit minute";</tag></item>
+   <item>huit minute et demi<tag>out.action.temps = '510000';out.action.tempsname = ">huit minute et demi";</tag></item>
+   <item>neuf minute <tag>out.action.temps = '540000';out.action.tempsname = "neuf minute";</tag></item>
+   <item>neuf minute et demi<tag>out.action.temps = '570000';out.action.tempsname = "neuf minute et demi";</tag></item>
+   <item>dix minute <tag>out.action.temps = '600000';out.action.tempsname = "dix minute";</tag></item>
+   <item>dix minute et demi<tag>out.action.temps = '630000';out.action.tempsname = "dix minute et demi";</tag></item>
+   <item>onze minute <tag>out.action.temps = '660000';out.action.tempsname = "onze minute";</tag></item>
+   <item>onze minute et demi<tag>out.action.temps = '690000';out.action.tempsname = "onze minute et demi";</tag></item>
+   <item>douze minute <tag>out.action.temps = '720000';out.action.tempsname = "douze minute";</tag></item>
+   <item>douze minute et demi<tag>out.action.temps = '750000'out.action.tempsname = "douze minute et demi";;</tag></item>
+   <item>tréze minute <tag>out.action.temps = '780000';out.action.tempsname = "tréze minute";</tag></item>
+   <item>tréze minute et demi<tag>out.action.temps = '810000';out.action.tempsname = "tréze minute et demi";</tag></item>
+   <item>quatorze minute <tag>out.action.temps = '840000';out.action.tempsname = "quatorze minute";</tag></item>
+   <item>quatorze minute et demi<tag>out.action.temps = '870000';out.action.tempsname = "quatorze minute et demi";</tag></item>
+   <item>quinze minute <tag>out.action.temps = '900000';out.action.tempsname = "quinze minute";</tag></item>
+   <item>quinze minute et demi<tag>out.action.temps = '930000';out.action.tempsname = "quinze minute et demi";</tag></item>
+  </one-of>
+
+
+    <tag>out.action._attributes.tts = "Ok"</tag> 
+    <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/minuteur";</tag>
+  </rule>
+</grammar>

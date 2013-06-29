@@ -1,0 +1,8 @@
+{
+  "modules" : { 
+    "minuteur"  : {
+      "description": "Sarah lance le minuteur",
+      "version"    : "0.3"
+    }
+  }
+}
